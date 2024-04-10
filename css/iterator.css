@@ -1,0 +1,104 @@
+@font-face { 
+    font-family: Rodondo; src: url('Rodondo.otf'); 
+    font-family: Rain World Dialogue; src: url('rain-world-menu.ttf');
+} 
+
+:root{
+    --black: #080605;
+    --white: #FFFFFF;
+    --teal: #6DEECA;
+    --orange: #F55612;
+}
+
+body{
+    background-color: var(--black);
+    font-family: Rodondo;
+    font-size: 35px;
+}
+
+h1{
+    font-family: Rodondo;
+    font-weight: 300;
+    font-size: 80px;
+    letter-spacing: 3px;
+    margin-bottom: 0.15em;
+}
+      
+.container {
+    max-width: 1080px;
+    margin: 0 auto
+}
+
+masthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 2em;
+    color: var(--white);
+    margin-bottom: 1em;
+  }
+
+masthead ul {
+    padding-inline-start: 0;
+}
+  
+masthead li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+  
+masthead a {
+    text-decoration: none;
+    color: var(--teal);
+    transition: all 0.3s ease 0s;
+}
+
+masthead a:hover {
+    color: var(--orange);
+  }
+
+.slideshow-container{
+
+    max-width: 1000px;
+    max-height: 1080px;
+    position: relative;
+    margin: auto;
+    border: 1px var(--orange); 
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover, .next:hover {
+    background-color: var(--teal);
+  }
+
+.text {
+    font-family: Rain World Dialogue;
+    max-width: 450px;
+    color: var(--orange);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    
+    width: 100%;
+    text-align: left;
+}
