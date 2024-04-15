@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/iterator.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>The Fall of Five Pebbles</title>
 </head>
 
@@ -25,10 +26,9 @@
             <div class="mySlides fade">
                 <div class="text">
                     <div class="name">Five Pebbles</div>
-                    <p>The youngest iterator tasked with solving "The Great Problem".</p>
-                    <br><br>He is resentful of the fact the Ancients left them behind with a task that no longer has any meaning or purpose. In his frustration, Five Pebbles came up with an experiment to overwrite his self-destructive taboo in an attempt to permanently end his cycle.
-                    <br><br>However, due to the increased intake of water needed to conduct this experiment, he left his sister superstructure, Looks to the Moon, with no water. This led to her suffering immensely from slag build-up, and eventually, she was forced to stop Five Pebbles, ultimately resulting in him failing his experiment.
-                    <br><br><p>Five Pebbles now suffers from The Rot, a byproduct of his failure.</p>
+                    <div id="five-pebbles">
+                    
+                    </div>
                 </div>
                 <img src="images/Five Pebbles Card.png" style="width:100%">
             </div>
@@ -60,5 +60,26 @@
     </div>
 
     <script src="js/slideshow.js"></script>
+
+    <script>
+        var fp = document.getElementById('five-pebbles');
+
+        var typewriter = new Typewriter(fp, {
+        loop: false,
+        delay: 75,
+        });
+
+        typewriter
+        .pauseFor(500)
+        .typeString('<p>The youngest iterator tasked with solving "The Great Problem".</p>')
+        .pauseFor(300)
+        .typeString('<br><br>He is resentful of the fact the Ancients left them behind with a task that no longer has any meaning or purpose. In his frustration, Five Pebbles came up with an experiment to overwrite his self-destructive taboo in an attempt to permanently end his cycle.')
+        .typeString('<br><br>However, due to the increased intake of water needed to conduct this experiment, he left his sister superstructure, Looks to the Moon, with no water. This led to her suffering immensely from slag build-up, and eventually, she was forced to stop Five Pebbles, ultimately resulting in him failing his experiment.')
+        .pauseFor(400)
+        .typeString('<br><br><p>Five Pebbles now suffers from The Rot, a byproduct of his failure.</p>')
+        .start();
+    </script>
+
+
 </body>
 </html>
