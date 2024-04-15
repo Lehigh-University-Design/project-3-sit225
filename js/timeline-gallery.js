@@ -1,14 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const timelineItems = document.querySelectorAll('.timeline .card');
+    const clickableSentences = document.querySelectorAll('.keynote');
 
-    // Add click event listener to each timeline item
-    timelineItems.forEach(item => {
-        item.addEventListener('click', function () {
+    clickableSentences.forEach(sentence => {
+        sentence.addEventListener('click', function () {
             // Get the image path from the data-image attribute
-            const imagePath = item.getAttribute('data-image');
+            const imagePath = sentence.getAttribute('data-image');
 
-            // Open the image in a new tab
-            window.open(imagePath, '_blank');
+            // Show the modal popup with the image
+            showModal(imagePath);
         });
     });
+
+    // Close the modal when the close button is clicked
+    const closeButton = document.querySelector('.close-button');
+    closeButton.addEventListener('click', closeModal);
 });
+
+function showModal(imagePath) {
+    // Show the modal overlay
+    const modalOverlay = document.querySelector('.modal-overlay');
+    modalOverlay.style.display = 'block';
+
+    // Set the image source in the modal
+    const modalImage = document.querySelector('.modal-image');
+    modalImage.src = imagePath;
+}
+
+function closeModal() {
+    // Hide the modal overlay
+    const modalOverlay = document.querySelector('.modal-overlay');
+    modalOverlay.style.display = 'none';
+}

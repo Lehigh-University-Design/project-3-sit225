@@ -123,7 +123,7 @@
  /* Setting the border of top, bottom, left */
 .card:nth-child(odd)::before {
     left: 0px;
-    top: -4.5px; /* Adjust the top position */
+    top: -5px; /* Adjust the top position */
     bottom: -5px; /* Adjust the bottom position */
     border-width: 5px 0 5px 5px;
     border-radius: 50px 0 0 50px;
@@ -208,50 +208,37 @@
 .card:nth-child(even) > .info > .title::before {
     right: -45px;
 }
-  
-button{
-  background-color: var(--black);
+
+.keynote{
   color: var(--orange);
-  border-style: none;
-  font-family: Rain World Dialogue;
-  font-size: 20px;
   cursor: pointer;
+  z-index: 999;
 }
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-    background-color: #2E1421;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 2px solid var(--orange);
-    width: 50%; /* Could be more or less, depending on screen size */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
 }
 
-.modal-content p{
+.modal-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: var(--teal);
   font-size: 20px;
-  color: var(--orange);
-}
-.close {
-    color: var(--orange);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: var(--white);
-    text-decoration: none;
-    cursor: pointer;
 }
