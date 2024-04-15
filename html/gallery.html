@@ -1,25 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" href="../css/iterator.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <title> The Fall of Five Pebbles </title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>The Fall of Five Pebbles</title>
+</head>
+<body>
+    <div class="container">
+        <masthead>
+            <nav>
+                <ul>
+                    <li>Gallery</li>
+                    <li><a href="iterator.html">Iterators</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+            </nav>
+        </masthead>
 
-    <body>
-        <div class=container>
-            <masthead>
-                <nav>
-                    <ul>
-                        <li>Gallery</li>
-                        <li><a href="iterator.html">Iterators</a></li>
-                        <li><a href="timeline.html">Timeline</a></li>
-                    </ul>
-                </nav>
-            </masthead>
+        <div id="gallery">
+            <div class="gallery-item">
+                <img src="../images/Five Pebbles Prime.png" alt="Image 1">
+                <div class="caption" onclick="openLightbox('../images/Five Pebbles Prime.png')">Five Pebbles in his prime. </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Looks to the Moon Prime.png" alt="Image 2" >
+                <div class="caption" onclick="openLightbox('../images/Looks to the Moon Prime.png')">Looks to the Moon in her prime.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Five Pebbles Gravity Room Prime.png" alt="Image 3">
+                <div class="caption" onclick="openLightbox('../images/Five Pebbles Gravity Room Prime.png')">Five Pebbles' gravity room pre-rot.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Spearmaster 5P Delivery.png" alt="Image 4">
+                <div class="caption" onclick="openLightbox('../images/Spearmaster 5P Delivery.png')">Spearmaster delivers the message from Seven Red Suns to Five Pebbles.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Spearmaster Thrown.png" alt="Image 5">
+                <div class="caption" onclick="openLightbox('../images/Spearmaster Thrown.png')">After reading the message from Seven Red Suns, Five Pebbles throws Spearmaster out in a rage.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/LTTM Writes Message.png" alt="Image 6">
+                <div class="caption" onclick="openLightbox('../images/LTTM Writes Message.png')">Spearmaster shows Looks to the Moon the message. She asks Spearmaster to broadcast a message she will write.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/LTTM In Pain.png" alt="Image 7">
+                <div class="caption" onclick="openLightbox('../images/LTTM In Pain.png')">Five Pebbles' experiment is taking a toll on Looks to the Moon. She falls over in pain from slag build up.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Spearmaster Broadcasts Message.png" alt="Image 8">
+                <div class="caption" onclick="openLightbox('../images/Spearmaster Broadcasts Message.png')">Spearmaster broadcasts Looks to the Moon's final message at the closest communication array.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Distant Iterators.png" alt="Image 9">
+                <div class="caption" onclick="openLightbox('../images/Distant Iterators.png')">Far away, distant iterators can be seen after Spearmaster's broadcasted message.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Garbage Wastes.png" alt="Image 10">
+                <div class="caption" onclick="openLightbox('../images/Garbage Wastes.png')">The creation of Garbage Wastes via Five Pebbles.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Hunter With Green Neuron.png" alt="Image 11">
+                <div class="caption" onclick="openLightbox('../images/Hunter With Green Neuron.png')">No Significant Harrassment sends The Hunter to deliver a green neuron to Looks to the Moon.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Hunter Revives LTTM.png" alt="Image 12">
+                <div class="caption" onclick="openLightbox('../images/Hunter Revives LTTM.png')">The Hunter revives Looks to the Moon with the green neuron.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Rot Overtaking 5P.png" alt="Image 13">
+                <div class="caption" onclick="openLightbox('../images/Rot Overtaking 5P.png')">Slowly, the rot consumes Five Pebbles due to his failure.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/5P Offers Rarefraction Cell.png" alt="Image 14">
+                <div class="caption" onclick="openLightbox('../images/5P Offers Rarefraction Cell.png')">Five Pebbles offers his rarefraction cell to Rivulet.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Five Pebbles Core.png" alt="Image 15">
+                <div class="caption" onclick="openLightbox('../images/Five Pebbles Core.png')">Rivulet journeys to Five Pebbles' core to retrieve his rarefraction cell.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Five Pebbles Core Empty.png" alt="Image 16">
+                <div class="caption" onclick="openLightbox('../images/Five Pebbles Core Empty.png')">Five Pebbles is without power now that Rivulet took his battery.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Rivulet Delivers Rarefraction Cell.png" alt="Image 17">
+                <div class="caption" onclick="openLightbox('../images/Rivulet Delivers Rarefraction Cell.png')">Rivulet brings the rarefraction cell to Looks to the Moon.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Rivulet Restores LTTM Power.png" alt="Image 18">
+                <div class="caption" onclick="openLightbox('../images/Rivulet Restores LTTM Power.png')">After instructed by Looks to the Moon, Rivulet brings the rarefraction cell to her core.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/LTTM Restored.png" alt="Image 19">
+                <div class="caption" onclick="openLightbox('../images/LTTM Restored.png')">Looks to the Moon is now operational again.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Snowfall in Bitter Aerie.png" alt="Image 20">
+                <div class="caption" onclick="openLightbox('../images/Snowfall in Bitter Aerie.png')">Time passes, and without Five Pebbles operational, it no longer rains. It begins to snow.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Five Pebbles Broken.png" alt="Image 21">
+                <div class="caption" onclick="openLightbox('../images/Five Pebbles Broken.png')">Five Pebbles, a now broken god.</div>
+            </div>
         </div>
+        
+        <!-- Lightbox container -->
+        <div id="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Image">
+        </div>
+    </div>
 
-    </body>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
