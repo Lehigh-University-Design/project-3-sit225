@@ -22,6 +22,7 @@ h1{
   font-size: 80px;
   letter-spacing: 3px;
   margin-bottom: 0.15em;
+  color: var(--orange);
 }
     
 .container {
@@ -77,10 +78,24 @@ masthead a:hover {
   border: 2px solid var(--orange);
 }
 
-.slideshow-container img{
+.slideshow-container img1{
   width: 1920px;
   height: auto;
+  content: url('../images/Five\ Pebbles\ Card.png');
 }
+
+.slideshow-container img2{
+  width: 1920px;
+  height: auto;
+  content: url('../images/Looks\ to\ the\ Moon\ Card.png');
+}
+
+.slideshow-container img3{
+  width: 1920px;
+  height: auto;
+  content: url('../images/Seven\ Red\ Suns\ Card.png');
+}
+
 
 .prev, .next {
   cursor: pointer;
@@ -107,19 +122,10 @@ masthead a:hover {
   background-color: var(--teal);
 }
 
-.name{
-  font-family: Rodondo;
-  font-weight: 300;
-  font-size: 80px;
-  letter-spacing: 3px;
-  line-height: 60px;
-  margin-bottom: 0.25em;
-}
-
 .text {
   max-width: 580px;
   font-family: Rain World Dialogue;
-  color: var(--orange);
+  color: var(--white);
   font-size: 15px;
   padding: 8px 60px;
   position: absolute;
@@ -132,19 +138,83 @@ masthead a:hover {
   height: 400px;
 }
 
-.text p {
-  overflow: hidden;
-  white-space: nowrap;
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .text {
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove translate */
+    width: 90%; /* Set width for smaller screens */
+    margin: 20px auto; /* Center horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+    color: var(--white); /* Change text color */
+  }
+
+  .slideshow-container{
+    border: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .mySlides{
+    flex: 1;
+  }
+
+  h1{
+    font-family: Rodondo;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 0.25em;
+  }
+
+  .slideshow-container img1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    content: url('../images/Five\ Pebbles\ Card\ Cropped.png');
+  } 
+  .slideshow-container img2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    content: url('../images/Looks\ to\ the\ Moon\ Card\ Cropped.png');
+  }
+  .slideshow-container img3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    content: url('../images/Seven\ Red\ Suns\ Card\ Cropped.png');
+  }
 }
 
-@keyframes typing {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
+@media screen and (max-width: 768px) {
+  .slideshow-container img:nth-of-type(1) {
+    content: url('../images/Five\ Pebbles\ Card\ Cropped.png'); /* Replace with your cropped image source */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    height: 300px; /* Set the height as needed */
+  }
+  
+  .slideshow-container img:nth-of-type(2) {
+    content: url('../images/Looks\ to\ the\ Moon\ Card\ Cropped.png'); /* Replace with your cropped image source */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    height: 300px; /* Set the height as needed */
+  }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: var(--orange); }
+  .slideshow-container img:nth-of-type(3) {
+    content: url('../images/Seven\ Red\ Suns\ Card\ Cropped.png'); /* Replace with your cropped image source */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    height: 300px; /* Set the height as needed */
+  }
 }
 
 /* Fading animation */

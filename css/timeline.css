@@ -74,7 +74,6 @@
     color: var(--orange);
   }
 
-  
 
   .textbox {
     width: 900px;
@@ -89,6 +88,14 @@
     color: var(--teal);
     line-height: 1.5;
   }
+
+  /* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .textbox {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
   
 
  /* Timeline Container */
